@@ -1,0 +1,16 @@
+div{
+    height: 100px;
+    width: 500px;
+    border: 2px solid black;
+    box-shadow: 2px 2px 5px black;
+    margin: auto;
+    margin-top: 40px;
+}
+*{
+    text-align: center;
+    margin-top: 20px;
+}
+button:active{
+    background-color: rgb(81, 80, 80);
+    color: snow;
+}
