@@ -3,15 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Random color</title>
+    <title>Random Color Generator</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<link rel="stylesheet" href="Style.css">
 <body>
     <h1>Generate a Random Color</h1>
-    <button>Generate Color</button>
-    <br>
-    <div>This is your new color</div>
     
+    <button id="generateBtn">🎨 Generate Color</button>
+    <button id="copyBtn">📋 Copy Color</button>
+    <button id="modeToggle">🌗 Toggle Mode</button>
+
+    <div id="colorBox">This is your new color</div>
+
+    <p id="colorCode">rgb(---, ---, ---)</p>
+
+    <h3>Previous Colors</h3>
+    <ul id="colorHistory"></ul>
+
     <script src="app.js"></script>
 </body>
-</html> 
+</html>
