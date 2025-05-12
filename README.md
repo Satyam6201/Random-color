@@ -18,7 +18,9 @@ A simple and interactive web application to generate random RGB colors, copy the
 ## 📁 Project Structure
 
  ├── index.html # Main HTML file 
+ 
  ├── style.css # CSS styles
+ 
  └── app.js # JavaScript functionality
 
  
