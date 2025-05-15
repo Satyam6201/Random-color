@@ -13,6 +13,7 @@ A simple and interactive web application to generate random RGB colors, copy the
 ## 🖼️ Preview
 
 ![Color Generator Light Mode](https://github.com/user-attachments/assets/83fea59b-5fd6-4711-bf8f-cd9de59b2e8b)
+
 ![Color Generator Dark Mode](https://github.com/user-attachments/assets/21c31784-c983-4854-96e7-cb5aeac9f36c)
 
 ## 📁 Project Structure
