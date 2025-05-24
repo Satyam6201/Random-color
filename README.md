@@ -25,7 +25,6 @@ A simple and interactive web application to generate random RGB colors, copy the
  └── app.js # JavaScript functionality
 
  
-
 ## 📋 How to Use
 
 1. Clone or download this repository.
