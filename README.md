@@ -27,14 +27,6 @@ A simple and modern **Random Color Generator** built with **HTML, CSS, and JavaS
 
 ---
 
-## 📸 Screenshots
-
-| Light Mode | Dark Mode |
-|------------|-----------|
-| ![Light](https://via.placeholder.com/300x150?text=Light+Mode) | ![Dark](https://via.placeholder.com/300x150?text=Dark+Mode) |
-
----
-
 ## 🛠️ Tech Stack
 
 - **HTML5**
