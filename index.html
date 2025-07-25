@@ -1,25 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Random Color Generator</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Random Color Generator</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <h1>Generate a Random Color</h1>
-    
-    <button id="generateBtn">🎨 Generate Color</button>
-    <button id="copyBtn">📋 Copy Color</button>
-    <button id="modeToggle">🌗 Toggle Mode</button>
+  <h1>🎨 Random Color Generator</h1>
 
-    <div id="colorBox">This is your new color</div>
+  <div class="controls">
+    <button id="generateBtn">Generate</button>
+    <button id="copyBtn">Copy</button>
+    <button id="toggleMode">Toggle Mode</button>
+    <button id="toggleFormat">Switch to HEX</button>
+    <button id="resetBtn">Reset</button>
+  </div>
 
-    <p id="colorCode">rgb(---, ---, ---)</p>
+  <div id="colorBox">Click Generate to see a color</div>
 
-    <h3>Previous Colors</h3>
-    <ul id="colorHistory"></ul>
+  <p id="colorCode">rgb(---, ---, ---)</p>
+  <small id="hslInfo">H: -- | S: -- | L: --</small>
 
-    <script src="app.js"></script>
+  <h3>Recent Colors</h3>
+  <ul id="colorHistory"></ul>
+
+  <script src="app.js"></script>
 </body>
 </html>
