@@ -44,7 +44,13 @@ A simple and modern **Random Color Generator** built with **HTML, CSS, and JavaS
 ---
 
 ## 📁 Folder Structure
-
+```
+Random-color/
+├── index.html # Main HTML file
+├── style.css # CSS styling with animations
+├── app.js # JavaScript logic
+└── README.md # Project documentation
+```
 
 
 ## 🙌 Author
