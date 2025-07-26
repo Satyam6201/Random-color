@@ -12,7 +12,7 @@ A simple and modern **Random Color Generator** built with **HTML, CSS, and JavaS
 
 <p align="center">
   <a href="https://random-color-livid.vercel.app/" target="_blank"><img src="https://img.shields.io/badge/🔴 Live-Demo-green?style=for-the-badge" /></a>
-  <a href="https://github.com/Satyam6201/Whack-a-mole-Game" target="_blank"><img src="https://img.shields.io/badge/💻 Source-Code-blue?style=for-the-badge" /></a>
+  <a href="https://github.com/Satyam6201/Random-color" target="_blank"><img src="https://img.shields.io/badge/💻 Source-Code-blue?style=for-the-badge" /></a>
   <a href="https://www.linkedin.com/in/satyam-kumar-mishra-9bb980291/" target="_blank"><img src="https://img.shields.io/badge/📇 Connect-LinkedIn-0A66C2?style=for-the-badge&logo=linkedin" /></a>
 </p>
 ---
