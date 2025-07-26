@@ -4,12 +4,6 @@ A simple and modern **Random Color Generator** built with **HTML, CSS, and JavaS
 
 ---
 
-## 🌐 Live Demo
-👉 [Click here to view the live project](https://random-color-livid.vercel.app/)
-
-## 📂 GitHub Repository
-🔗 [https://github.com/Satyam6201/Random-color](https://github.com/Satyam6201/Random-color)
-
 <p align="center">
   <a href="https://random-color-livid.vercel.app/" target="_blank"><img src="https://img.shields.io/badge/🔴 Live-Demo-green?style=for-the-badge" /></a>
   <a href="https://github.com/Satyam6201/Random-color" target="_blank"><img src="https://img.shields.io/badge/💻 Source-Code-blue?style=for-the-badge" /></a>
