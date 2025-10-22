@@ -3,92 +3,46 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Advanced Random Color & Palette Generator</title>
+  <title>🎨 Modern Color & Palette Generator</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <h1>🎨 Advanced Random Color & Palette Generator</h1>
-    <p class="subtitle">Generate, explore, and export beautiful colors and palettes</p>
+    <h1>🎨 Modern Color & Palette Generator</h1>
+    <p>Generate stunning random colors, gradients & palettes</p>
   </header>
 
-  <!-- Control Panel -->
+  <!-- Control Buttons -->
   <section class="controls">
-    <button id="generateBtn">🎲 Generate Color</button>
-    <button id="generateGradientBtn">🌈 Generate Gradient</button>
-    <button id="generatePaletteBtn">🎨 Generate Palette</button>
+    <button id="generateBtn">🎲 Random Color</button>
+    <button id="gradientBtn">🌈 Random Gradient</button>
+    <button id="paletteBtn">🎨 Generate Palette</button>
     <button id="copyBtn">📋 Copy Color</button>
-    <button id="ttsBtn">🔊 Speak Color</button>
-    <button id="toggleFormat">🔁 Switch to HEX</button>
-    <button id="toggleMode">🌗 Toggle Mode</button>
-    <button id="resetBtn">♻️ Reset</button>
+    <button id="modeBtn">🌗 Toggle Mode</button>
   </section>
 
   <!-- Color Display -->
   <section class="display">
-    <div id="colorBox" title="Click to Copy">Click Generate to see a color</div>
+    <div id="colorBox"></div>
     <p id="colorCode">rgb(---, ---, ---)</p>
-    <p id="hslInfo">H: -- | S: -- | L: --</p>
-    <div id="contrastInfo">Contrast: --</div>
   </section>
 
-  <!-- Gradient Info -->
-  <section class="gradient-section" id="gradientSection" style="display: none;">
-    <h3>🎨 Gradient Preview</h3>
-    <div id="gradientBox">Gradient will appear here</div>
+  <!-- Gradient Display -->
+  <section class="gradient" id="gradientSection">
+    <div id="gradientBox"></div>
     <p id="gradientCode">linear-gradient(...)</p>
   </section>
 
-  <!-- Color Palette Section -->
-  <section class="palette-section">
-    <h3>🌈 Generated Color Palette</h3>
-    <div id="paletteBox" class="palette-container"></div>
-    <button id="downloadPaletteBtn">⬇️ Download Palette as Image</button>
-    <button id="savePaletteBtn">💾 Save Palette</button>
+  <!-- Palette -->
+  <section class="palette">
+    <h3>🎨 Palette</h3>
+    <div id="paletteBox"></div>
   </section>
 
-  <!-- Saved Palettes -->
-  <section class="saved-palettes">
-    <h3>📁 Saved Palettes</h3>
-    <div id="savedPalettes"></div>
-  </section>
+  <footer>
+    Made with ❤️ by <a href="https://github.com/Satyam6201" target="_blank">Satyam Kumar Mishra</a>
+  </footer>
 
-  <!-- Search Section -->
-  <section class="search-section">
-    <h3>🔍 Search a Color</h3>
-    <input type="text" id="searchInput" placeholder="Enter color name or HEX/RGB code (e.g., red or #FF0000)" />
-    <button id="applySearchBtn">🎯 Apply Color</button>
-  </section>
-
-  <!-- Color Theory Helper -->
-  <section class="color-theory">
-    <h3>🎨 Color Harmony</h3>
-    <div class="harmony-boxes">
-      <div class="harmony" id="complementaryColor">Complementary</div>
-      <div class="harmony" id="analogousColor">Analogous</div>
-      <div class="harmony" id="triadicColor">Triadic</div>
-    </div>
-  </section>
-
-  <!-- History Section -->
-  <section class="history-section">
-    <h3>📚 Recent Colors</h3>
-    <ul id="colorHistory"></ul>
-  </section>
-
-  <!-- Footer -->
-<footer style="margin-top: 40px; padding: 20px; background: #f0f0f0; color: #333;">
-  <p>Made with ❤️ by <strong>Satyam Kumar Mishra</strong></p>
-  <p>
-    GitHub: 
-    <a href="https://github.com/Satyam6201" target="_blank" style="color: #007bff; text-decoration: none;">
-      GitHub
-    </a>
-  </p>
-</footer>
-
-
-  <!-- JS File -->
   <script src="app.js"></script>
 </body>
 </html>
