@@ -1,53 +1,37 @@
-/* Enhanced Style.css with Layout, Animation, and Aesthetic Touches */
-
-/* Reset & Base Styles */
+/* Base */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Segoe UI', sans-serif;
-  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
-  background: #f5f5f5;
-  color: #333;
-  transition: background 0.3s ease, color 0.3s ease;
+  background: #f4f4f4;
+  color: #222;
+  text-align: center;
   padding: 20px;
-  line-height: 1.6;
+  transition: background 0.4s ease, color 0.4s ease;
 }
 
 .dark-mode {
   background: #121212;
-  color: #e0e0e0;
+  color: #f4f4f4;
 }
 
 /* Header */
 header {
-  text-align: center;
   margin-bottom: 30px;
-  animation: fadeIn 1.2s ease-in;
+  animation: fadeIn 1s ease;
 }
 
 header h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: #6c5ce7;
-  animation: popIn 1s ease-in-out;
 }
 
-.subtitle {
-  color: #636e72;
-  font-size: 1rem;
-}
-
-/* Layout Wrapping Section */
-section {
-  background-color: #ffffff;
-  border-radius: 10px;
-  padding: 20px;
-  margin-bottom: 25px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  animation: fadeInUp 0.7s ease both;
+header p {
+  color: #777;
 }
 
 /* Controls */
@@ -55,182 +39,90 @@ section {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 12px;
+  gap: 10px;
+  margin-bottom: 25px;
 }
 
-.controls button {
-  padding: 10px 18px;
-  border: none;
+button {
   background: linear-gradient(135deg, #6c5ce7, #341f97);
-  color: #fff;
+  border: none;
+  color: white;
   font-weight: 600;
+  padding: 10px 18px;
   border-radius: 8px;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
-.controls button:hover {
-  background: linear-gradient(135deg, #341f97, #6c5ce7);
-  transform: scale(1.05) rotate(-1deg);
+button:hover {
+  transform: scale(1.08);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
-/* Display Section */
-.display {
-  text-align: center;
+/* Display */
+.display #colorBox {
+  width: 180px;
+  height: 180px;
+  margin: 0 auto 10px;
+  border-radius: 15px;
+  border: 3px solid #ccc;
+  transition: all 0.4s ease;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
 }
 
-#colorBox {
-  width: 220px;
-  height: 220px;
-  margin: 0 auto 15px;
+#colorCode {
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+/* Gradient */
+.gradient #gradientBox {
+  width: 80%;
+  height: 100px;
+  margin: 20px auto 10px;
   border-radius: 12px;
-  border: 4px solid #ccc;
-  cursor: pointer;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  animation: popIn 0.8s ease;
-  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  border: 2px dashed #888;
+  transition: all 0.4s ease;
 }
 
-#colorBox:hover {
-  transform: scale(1.07);
-  box-shadow: 0 0 16px rgba(0, 0, 0, 0.2);
+/* Palette */
+.palette {
+  margin-top: 30px;
 }
 
-#colorCode, #hslInfo, #contrastInfo {
-  font-size: 1.1rem;
-  margin-top: 8px;
-  animation: fadeIn 1.2s ease;
-}
-
-/* Gradient Section */
-#gradientBox {
-  width: 100%;
-  max-width: 500px;
-  height: 120px;
-  margin: 0 auto;
-  border-radius: 10px;
-  border: 2px dashed #aaa;
-  animation: fadeInUp 0.8s ease;
-}
-
-#gradientCode {
-  margin-top: 12px;
-  font-family: monospace;
-  color: #555;
-}
-
-/* Palette Section */
-.palette-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 15px;
-  margin-top: 15px;
-}
-
-.palette-container div {
-  width: 80px;
-  height: 80px;
-  border-radius: 10px;
-  border: 2px solid #aaa;
-  transition: all 0.3s;
-  cursor: pointer;
-}
-
-.palette-container div:hover {
-  transform: scale(1.1);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Saved Palettes */
-#savedPalettes {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  justify-content: center;
-  margin-top: 10px;
-}
-
-#savedPalettes div {
-  width: 60px;
-  height: 60px;
-  border-radius: 6px;
-  border: 2px solid #aaa;
-  animation: fadeInUp 0.8s ease;
-}
-
-/* Search Section */
-#searchInput {
-  padding: 8px 14px;
-  width: 250px;
-  border-radius: 6px;
-  border: 1px solid #aaa;
-  font-size: 1rem;
-}
-
-#applySearchBtn {
-  margin-left: 10px;
-}
-
-/* Color Harmony */
-.harmony-boxes {
+#paletteBox {
   display: flex;
   justify-content: center;
   gap: 15px;
-  margin-top: 15px;
+  flex-wrap: wrap;
 }
 
-.harmony {
-  width: 100px;
-  height: 60px;
-  border-radius: 8px;
-  border: 2px solid #555;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #dfe6e9;
-  color: #2d3436;
-  font-weight: bold;
+#paletteBox div {
+  width: 70px;
+  height: 70px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 2px solid #ccc;
   transition: transform 0.3s ease;
 }
 
-.harmony:hover {
-  transform: translateY(-5px) scale(1.05);
-}
-
-/* History */
-#colorHistory {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 12px;
-  padding: 10px;
-}
-
-#colorHistory li {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  border: 2px solid #888;
-  cursor: pointer;
-  animation: popIn 0.6s ease;
+#paletteBox div:hover {
+  transform: scale(1.1);
 }
 
 /* Footer */
 footer {
-  background-color: #222;
-  color: #ccc;
-  text-align: center;
-  padding: 20px 10px;
-  margin-top: 50px;
-  border-top: 2px solid #007bff;
-  font-size: 15px;
+  margin-top: 40px;
+  padding: 20px;
+  font-size: 0.9rem;
+  color: #555;
 }
 
 footer a {
-  color: #00c6ff;
+  color: #6c5ce7;
   text-decoration: none;
+  font-weight: 600;
 }
 
 footer a:hover {
@@ -239,65 +131,14 @@ footer a:hover {
 
 /* Animations */
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(-10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes popIn {
-  0% {
-    transform: scale(0.4);
-    opacity: 0;
-  }
-  100% {
-    transform: scale(1);
-    opacity: 1;
-  }
-}
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(25px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  from {opacity: 0; transform: translateY(-10px);}
+  to {opacity: 1; transform: translateY(0);}
 }
 
 /* Responsive */
-@media (max-width: 768px) {
-  .controls {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .palette-container,
-  .harmony-boxes {
-    flex-direction: column;
-  }
-
-  #gradientBox {
-    width: 90%;
-  }
-
-  #searchInput {
-    width: 90%;
-    margin-bottom: 10px;
-  }
-
-  #colorBox {
-    width: 90%;
-    height: 200px;
-  }
-
-  .harmony {
-    width: 90%;
+@media (max-width: 600px) {
+  #paletteBox div {
+    width: 55px;
+    height: 55px;
   }
 }
